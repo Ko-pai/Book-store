@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  width: 100dvw;
+  height: 100dvh;
+}
+body .container header {
+  width: 100%;
+  height: 100px;
+  background-color: #c9e4ca;
+  display: flex;
+  justify-content: space-around;
+}
+body .container header .left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .container header .left h2 {
+  color: #364958;
+  font-family: "Inconsolata", monospace;
+  font-size: 35px;
+}
+body .container header .left img {
+  width: 60px;
+  height: 60px;
+}
+body .container header .middle {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container header .middle input {
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  outline-color: #3b6064;
+  outline-width: thin;
+}
+body .container header .middle button {
+  width: 50px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkslategray;
+  margin-left: 30px;
+}
+body .container header .middle button img {
+  width: 20px;
+  height: 20px;
+}
+body .container header .last {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+}
+body .container header .last ul {
+  width: 70%;
+  height: 30px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container header .last ul li a {
+  color: #3b6064;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+body .container header .last ul li a:active {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

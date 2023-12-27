@@ -1,0 +1,27 @@
+$firstColor : "#c9e4ca";
+$secondColor : "#87bba2";
+$thirdColor : "#55828b";
+$fourthColor : "#3b6064";
+$fifthColor : "#364958";
+
+
+$mobile : "560px";
+$smallDesktop : "760px";
+$desktop : "1600px";
+
+@mixin mobile {
+    @media (max-width : #{$mobile}) {
+        @content
+    }
+};
+
+@mixin pc {
+    @media (max-width : #{$smallDesktop}) {
+        @content
+    }
+};
+@mixin desktop {
+    @media (max-width : #{$desktop}) {
+        @content
+    }
+}
