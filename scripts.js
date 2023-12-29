@@ -1,3 +1,4 @@
+
 const URL = "https://www.googleapis.com/books/v1/volumes?q=search+terms";
 let dataArray = [];
 let localData = [];
@@ -6,12 +7,14 @@ const favouriteLink = document.querySelector('.favourite')
 const form = document.querySelector("form");
 const bookContainer = document.querySelector(".book-card-container");
 
-async function fetchData() {
-  const response = await fetch(URL);
-  const data = await response.json();
 
-  const item = data.items;
-  console.log(item);
+
+async function fetchData() {
+  const response = await fetch('./Bookdata.json')
+  const data = await response.json()
+
+  
+  console.log(data);
   
 
   form.addEventListener("click", (e) => {
@@ -19,10 +22,12 @@ async function fetchData() {
     console.log("good");
   });
 
-  for (let i = 0; i < item.length; i++) {
-    let image = item[i].volumeInfo.imageLinks.thumbnail;
-    let title = item[i].volumeInfo.title;
-    let categories = item[i].volumeInfo.categories;
+  for (let i = 0; i < data.length; i++) {
+    let image = data[i].bigImg;
+    let title = data[i].title;
+    let categories = data[i].categories;
+
+    
 
     const card = document.createElement("div");
     card.id = i;
@@ -63,7 +68,6 @@ async function fetchData() {
     });
   });
 
-  console.log(item.length);
   const favIcon = document.querySelectorAll(".fa-heart");
 
   favIcon.forEach((icon) => {
@@ -71,7 +75,7 @@ async function fetchData() {
       const localD = JSON.parse(localStorage.getItem("favourite"));
 
       if (!e.target.classList.contains("heart-active")) {
-        if (favIconId.length < item.length) {
+        if (favIconId.length < data.length) {
           favIconId.push(e.target.id);
 
           localStorage.setItem("favourite", JSON.stringify(favIconId));

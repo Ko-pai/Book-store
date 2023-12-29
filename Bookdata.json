@@ -1,0 +1,84 @@
+[
+    {
+        "id" : 1,
+        "title" : "Using Google Advanced Search",
+        "description" : "After completing this tutorial you will be able to use multiple search terms and other advanced features in 'Google.' This flash tutorial requires a screen resolution of 1024 x 768 or higher.",
+        "author" : "Michael Miller",
+        "categories" : "Google Book",
+        "thumbnailsImg" : "./book/advanced-search-small.jfif",
+        "bigImg" : "./book/advanced-search-big.png"
+    },
+    {
+        "id" : 2,
+        "title" : "Web Search: Public Searching of the Web",
+        "description" : "Web Search: Public Searching of the Web, co-authored by Drs. Amanda Spink and Bernard J. Jansen, is one of the first manuscripts that address the human - system interaction of Web searching in a thorough and complete manner. The authors provide an examination of Web searching from multiple levels of analysis, from theoretical overview to detailed study of term usage, and integrate these different levels of analysis into a coherent picture of how people locate information on the Web using search engines. Drawing primarily on their own research and work in the field, the authors present the temporal changes in, the growth of, and the stability of how people interact with Web search engines. Drs. Spink and Jansen present results from an analysis of multiple search engine data sets over a six year period, giving a firsthand account of the emergence of Web searching. They also compare and contrast their findings to the results of other researchers in the field, providing a valuable bibliographic resource. This research is directly relevant to those interested in providing information or services on the Web, along with those who research and study the Web as an information resource. Graduate students, academic and corporate researchers,search engine designers, information architects, and search engine optimizers will find the book of particular benefit.",
+        "author" : "Bernard J. Jansen",
+        "categories" : "Computers",
+        "thumbnailsImg" : "./book/Public-web-search-small.jfif",
+        "bigImg" : "./book/Public-web-search-big.jfif"
+    },
+    {
+        "id" : 3,
+        "title" : "Pennsylvania Law Encyclopedia",
+        "description" : "This indispensable resource discusses the basic elements of virtually every subject area pertinent to the practice of law in Pennsylvania. For each major issue discussed, Pennsylvania Law Encyclopedia provides black letter law summaries that precede more in-depth analyses of case law, statutes, and rules, with proper citations to other authority. Concise yet comprehensive, Pennsylvania Law Encyclopedia presents Pennsylvania laws and their exceptions, qualifications, limitations, and extensions.",
+        "author" : "Michie",
+        "categories" : "Law",
+        "thumbnailsImg" : "./book/Pennsylvania-small.jpg",
+        "bigImg" : "./book/Pennsylvania-Law-Encyclopedia-big.jpg"
+    },
+    {
+        "id" : 4,
+        "title" : "Keyword Intelligence",
+        "description" : "A unique book on the art and science of keyword research Keyword research can make or break a marketing campaign,an optimization strategy, and pay-per-click ad campaigns. Written by a keyword research expert,this essential resource drills home the importance of targeting the right keywords or phrases in order to get traffic from search engines and social media channels. Author Ron Jones imparts his wisdom and experience for determining which keywords will work based on a searcher's intent and he shows you how to research social, mobile, and video marketing toolsthat can ultimately become the foundation of a marketing campaign. Boasts detailed how-to information from one of the world's leading keyword research experts Helps you learn how to craft a successful keyword campaign and capture a coveted spot on the first page of a results page Pares down the essential information you need to know to use available tools to get keyword suggestions, forecast web site traffic, perform competitive research, and analyze results Walks you through how to best apply keywords to SEO and PPC campaigns as well as gain visibility with mobile marketing and integrate with traditional marketing efforts Features case studies, examples, tutorials, tips, and previously undocumented techniques No matter your level of experience working with keywords, Keyword Intelligence is the ultimate guide for learning how to best conduct keyword research and craft winning marketing campaigns.",
+        "author" : "Ron Jones",
+        "categories" : "Business & Economic",
+        "thumbnailsImg" : "./book/Keyword-Intelligence-small.jpg",
+        "bigImg" : "./book/Keyword-intelligence-big.jpg"
+    },
+    {
+        "id" : 5,
+        "title" : "Marketing Through Search Optimization",
+        "description" : "Marketing Through Search Optimization, Second Edition, is the step-by-step marketer's guide to improving your web ranking in search engines and getting your site listed effectively in online directories. Search engine placement has become a key task for those engaged in website marketing because good positioning in search engines and directories dramatically increases visitor traffic. Optimizing search engine ranking will be the most important and cost-effective way of marketing your website, and customers use search engines more than any other method to locate websites. Submitting to search engines is only part of the challenge. It is also vital to prepare a website through 'search engine optimization,' ensuring that your web pages are accessible and focused in ways that drive traffic to your site.",
+        "author" : "Alex Michael",
+        "categories" : "Business & Economics",
+        "thumbnailsImg" : "./book/Marketing-through-small.jpg",
+        "bigImg" : "./book/Marketing-through-big.jpg"
+    },
+    {
+        "id" : 6,
+        "title" : "Hands-on Information Literacy Activities",
+        "description" : "This book (and accompanying CD-ROM) is aimed at helping secondary school and college students develop critical information literacy skills.",
+        "author" : "Jane Birks",
+        "categories" : "CD-ROMs",
+        "thumbnailsImg" : "./book/Hands-on-small.jpg",
+        "bigImg" : "./book/Hands-on-big.jpg"
+    },
+    {
+        "id" : 7,
+        "title" : "Principles of Research Design and Drug Literature Evaluation",
+        "description" : "Principles of Research Design and Drug Literature Evaluation is a unique resource that provides a balanced approach covering critical elements of clinical research, biostatistical principles, and scientific literature evaluation techniques for evidence-based medicine. This accessible text provides comprehensive course content that meets and exceeds the curriculum standards set by the Accreditation Council for Pharmacy Education (ACPE).Written by expert authors specializing in pharmacy practice and research, this valuable text will provide pharmacy students and practitioners with a thorough understanding of the principles and practices of drug literature evaluation with a strong grounding in research and biostatistical principles. Principles of Research Design and Drug Literature Evaluation is an ideal foundation for professional pharmacy students and a key resource for pharmacy residents, research fellows, practitioners, and clinical researchers. FEATURES * Chapter Pedagogy: Learning Objectives, Review Questions, References, and Online Resources * Instructor Resources: PowerPoint Presentations, Test Bank, and an Answer Key * Student Resources: a Navigate Companion Website, including Crossword Puzzles, Interactive Flash Cards, Interactive Glossary, Matching Questions, and Web Links From the Foreword: 'This book was designed to provide and encourage practitioner’s development and use of critical drug information evaluation skills through a deeper understanding of the foundational principles of study design and statistical methods. Because guidance on how a study’s limited findings should not be used is rare, practitioners must understand and evaluate for themselves the veracity and implications of the inherently limited primary literature findings they use as sourcesof drug information to make evidence-based decisions together with their patients. The editors organized the book into three supporting sections to meet their pedagogical goals and address practitioners’ needs in translating research into practice.Thanks to the editors, authors, and content of this book, you can now be more prepared than ever before for translating research into practice.' L. Douglas Ried, PhD, FAPhA Editor-in-Chief Emeritus, Journal of the American Pharmacists Association Professor and Associate Dean for Academic Affairs, College of Pharmacy, University of Texas at Tyler, Tyler, Texas",
+        "author" : "Rajender R. Aparasu",
+        "categories" : "Medical",
+        "thumbnailsImg" : "./book/Principle-of-Research-small.jpg",
+        "bigImg" : "./book/Principle-of-Research-big.jpg"
+    },
+    {
+        "id" : 8,
+        "title" : "Your Undergraduate Dissertation",
+        "description" : "'This is a refreshing and inspiring book, of equal value to both the anxious and the ambitious student' - Lucinda Becker, Department of English Literature, University of Reading In the second edition of this best-selling guide, Nicholas Walliman provides expert, step-by-step advice on managing and developing a successful undergraduate project. This book takes you through each stage of your dissertation, answering questions including: How do I choose an appropriate topic for my dissertation? How do I write a research proposal? What's a literature review, how do I conduct it and how do I write it up? How can I ensure  I'm an ethical researcher? What methods of data collection are appropriate for my research question? Once I have collected my data, what do I do?  What's the best structure for my dissertation? Full of examples from real student projects, interdisciplinary case studies and  illustrated with cartoons to make you smile along the way, this book will tell you all you need to know to write a brilliant  dissertation.",
+        "author" : "Nicholas Walliman",
+        "categories" : "Literary Collections",
+        "thumbnailsImg" : "./book/Undergraduate-dissertation-small.jpg",
+        "bigImg" : "./book/Undergraduate-dissertation-big.jpg"
+    },
+    {
+        "id" : 9,
+        "title" : "The Adventures of Sherlock Holmes",
+        "description" : "The Adventures of Sherlock Holmes, a collection of twelve short stories by Scottish author Arthur Conan Doyle, is considered a milestone in the genre of detective fiction. With Sherlock Holmes’s clever disguises and ability to solve even the most elusive mysteries,  as well as Holmes’s loyal friend and biographer, Dr. Watson, who narrates most of the stories, Doyle’s suspenseful stories and  well-developed characters keep readers on the edges of their seats. Now available as part of the Word Cloud Classics series,  The Adventures of Sherlock Holmes is a must-have addition to the libraries of all classic literature lovers.",
+        "author" : "Arthur Conan Doyle",
+        "categories" : "Sherlock Holmes Book Series",
+        "thumbnailsImg" : "./book/Sherlock-Home-small.jpg",
+        "bigImg" : "./book/Sherlock-Home-big.jpg"
+    }
+]
+
