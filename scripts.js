@@ -152,7 +152,7 @@ const afterClickContainer = document.querySelector(".afterClickContainer")
 
 humburger.addEventListener('click' ,()=>{
     if(humburger.classList.contains("active")){
-      afterClickContainer.style.transform = 'translateX(120%)'
+      afterClickContainer.style.transform = 'translateX(140%)'
       one.style.transform = 'translateY(0) rotate(0)'
       
       two.style.opacity = '1'
@@ -190,7 +190,7 @@ mobileFavouriteLink.addEventListener('click' ,()=>{
      });
     
   })
-  afterClickContainer.style.transform = 'translateX(120%)'
+  afterClickContainer.style.transform = 'translateX(140%)'
       one.style.transform = 'translateY(0) rotate(0)'
       
       two.style.opacity = '1'
