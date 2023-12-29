@@ -26,8 +26,6 @@ body{
         background-color: #c9e4ca;
         display: flex;
         justify-content: space-between;
-        
-        
 
 
         @include mobile{
@@ -37,6 +35,7 @@ body{
         .afterClickContainer{
             display: none;
             transition: transform 500ms ease-in-out;
+            transform: scale(0);
     
             @include mobile{
                 width: 70%;

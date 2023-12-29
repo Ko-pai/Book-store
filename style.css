@@ -24,6 +24,7 @@ body header {
 body header .afterClickContainer {
   display: none;
   transition: transform 500ms ease-in-out;
+  transform: scale(0);
 }
 @media (max-width: 560px) {
   body header .afterClickContainer {

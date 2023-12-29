@@ -190,7 +190,7 @@ mobileFavouriteLink.addEventListener('click' ,()=>{
      });
     
   })
-  afterClickContainer.style.transform = 'translateX(150%)'
+      afterClickContainer.style.transform = 'translateX(150%) scale(0)'
       one.style.transform = 'translateY(0) rotate(0)'
       
       two.style.opacity = '1'
