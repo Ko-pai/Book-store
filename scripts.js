@@ -152,7 +152,7 @@ const afterClickContainer = document.querySelector(".afterClickContainer")
 
 humburger.addEventListener('click' ,()=>{
     if(humburger.classList.contains("active")){
-      afterClickContainer.style.transform = 'translateX(140%)'
+      afterClickContainer.style.transform = 'translateX(150%) scale(0)'
       one.style.transform = 'translateY(0) rotate(0)'
       
       two.style.opacity = '1'
@@ -161,7 +161,7 @@ humburger.addEventListener('click' ,()=>{
       humburger.classList.remove('active')
       humburger.style.zIndex = 1
     }else{
-      afterClickContainer.style.transform = 'translateX(0%)'
+      afterClickContainer.style.transform = 'translateX(0%) scale(1)'
       humburger.classList.add('active')
       one.style.transform = 'translateY(12px) rotate(45deg)'
       
@@ -190,7 +190,7 @@ mobileFavouriteLink.addEventListener('click' ,()=>{
      });
     
   })
-  afterClickContainer.style.transform = 'translateX(140%)'
+  afterClickContainer.style.transform = 'translateX(150%)'
       one.style.transform = 'translateY(0) rotate(0)'
       
       two.style.opacity = '1'
