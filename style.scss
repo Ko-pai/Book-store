@@ -16,12 +16,68 @@ body{
         height: 180dvh;
     }
 
+    .afterClickContainer{
+            display: none;
+            transition: transform 300ms ease-in-out;
+    
+            @include mobile{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 400px;
+                top: 50px;
+                background: #3b6064;
+                position: absolute;
+                right: 70px;
+                transform: translateX(120%);
+                z-index: 2;
+
+                
+                ul{
+                        width: 50%;
+                        height: 50%;
+                        display: flex;
+                        list-style: none;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 0;
+                        
+                    
+        
+                        li{
+        
+                                cursor: pointer;
+                                color: white;
+                                font-size: 18px;
+                                text-decoration: none;
+                                font-weight: 500;
+        
+        
+                                &:active{
+                                    color: #c9e4ca;
+                                }
+                        }
+                    }
+            }
+        }
+
     header{
         width: 100%;
         height: 100px;
         background-color: #c9e4ca;
         display: flex;
         justify-content: space-between;
+        
+
+
+        @include mobile{
+            
+        }
+
+        
 
         .left{
             width: 20%;
@@ -31,7 +87,7 @@ body{
             justify-content: space-around;
 
             @include mobile{
-                width: 30%;
+                width: 50%;
             }
             
             h2{
@@ -64,7 +120,7 @@ body{
             justify-content:center;
 
             @include mobile{
-                width: 30%;
+                display: none;
             }
 
             input{
@@ -76,6 +132,9 @@ body{
                 outline-color: #3b6064;
                 outline-width: thin;
 
+                @include mobile{
+                    width: 150px;
+                }
 
             }
 
@@ -103,22 +162,24 @@ body{
             font-family: 'Barlow', sans-serif;
             
             @include mobile{
-                width: 10%;
+                width: 30%;
             }
 
             .hamburger{
                 display: none;
+                
 
                 @include mobile{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     
+                    position: absolute;
                     width: 50px;
                     height: 40px;
                     
                     
-                    &:hover{
+                    &:active{
                         
                         .one{
                             transform: translateY(12px) rotate(45deg);
@@ -185,11 +246,16 @@ body{
 
         @include mobile{
             height: calc(1100px - 100px);
+            
         }
         .container{
             width: 100%;
             height: 100%;
             
+            @include mobile{
+                margin-bottom: 20px;
+            }
+
             .first-head-text{
                 width: 100%;
                 height: 100px;
@@ -200,7 +266,8 @@ body{
                 h3{
                     font-family: 'Inconsolata', monospace;
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 45px;
+                    color: #3b6064;
                     padding: 0;
                     margin: 0;
                 }
@@ -263,7 +330,7 @@ body{
 
                     h3{
                         width: 90%;
-                        font-size: 15px;
+                        font-size: 17px;
                         text-align: center ;
                         padding: 0;
                         margin: 0;

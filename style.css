@@ -14,6 +14,45 @@ body::-webkit-scrollbar {
     height: 180dvh;
   }
 }
+body .afterClickContainer {
+  display: none;
+  transition: transform 300ms ease-in-out;
+}
+@media (max-width: 560px) {
+  body .afterClickContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    top: 50px;
+    background: #3b6064;
+    position: absolute;
+    right: 70px;
+    transform: translateX(120%);
+    z-index: 2;
+  }
+  body .afterClickContainer ul {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+  body .afterClickContainer ul li {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  body .afterClickContainer ul li:active {
+    color: #c9e4ca;
+  }
+}
 body header {
   width: 100%;
   height: 100px;
@@ -30,7 +69,7 @@ body header .left {
 }
 @media (max-width: 560px) {
   body header .left {
-    width: 30%;
+    width: 50%;
   }
 }
 body header .left h2 {
@@ -62,7 +101,7 @@ body header .middle {
 }
 @media (max-width: 560px) {
   body header .middle {
-    width: 30%;
+    display: none;
   }
 }
 body header .middle input {
@@ -73,6 +112,11 @@ body header .middle input {
   border-radius: 5px;
   outline-color: #3b6064;
   outline-width: thin;
+}
+@media (max-width: 560px) {
+  body header .middle input {
+    width: 150px;
+  }
 }
 body header .middle button {
   width: 50px;
@@ -96,7 +140,7 @@ body header .last {
 }
 @media (max-width: 560px) {
   body header .last {
-    width: 10%;
+    width: 30%;
   }
 }
 body header .last .hamburger {
@@ -107,16 +151,17 @@ body header .last .hamburger {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
     width: 50px;
     height: 40px;
   }
-  body header .last .hamburger:hover .one {
+  body header .last .hamburger:active .one {
     transform: translateY(12px) rotate(45deg);
   }
-  body header .last .hamburger:hover .two {
+  body header .last .hamburger:active .two {
     opacity: 0;
   }
-  body header .last .hamburger:hover .three {
+  body header .last .hamburger:active .three {
     transform: translateY(-10px) rotate(-45deg);
   }
   body header .last .hamburger .line {
@@ -167,6 +212,11 @@ body main .container {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 560px) {
+  body main .container {
+    margin-bottom: 20px;
+  }
+}
 body main .container .first-head-text {
   width: 100%;
   height: 100px;
@@ -177,7 +227,8 @@ body main .container .first-head-text {
 body main .container .first-head-text h3 {
   font-family: "Inconsolata", monospace;
   text-align: center;
-  font-size: 30px;
+  font-size: 45px;
+  color: #3b6064;
   padding: 0;
   margin: 0;
 }
@@ -229,7 +280,7 @@ body main .container .book-card-container .good img, body main .container .nice 
 }
 body main .container .book-card-container .good h3, body main .container .nice .good h3 {
   width: 90%;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   padding: 0;
   margin: 0;
