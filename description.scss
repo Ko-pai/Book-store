@@ -1,7 +1,13 @@
+@import './global.scss';
+
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     .container{
         width: 100dvw;
@@ -78,6 +84,10 @@ body{
                 justify-content: center;
                 font-family: 'Barlow', sans-serif;
                 
+
+                @include mobile {
+                    display: none;
+                }
     
                 ul{
                     width: 70%;
@@ -102,6 +112,80 @@ body{
                                 color: white;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        main{
+            width: 100%;
+            height: calc(100dvh - 100px);
+            display: flex;
+            margin-top: 40px;
+            cursor: default;
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+                
+
+                
+            }
+
+            .left{
+                width: 30%;
+                height: 100%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include mobile{
+                    width: 100%;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+                }
+
+                img{
+                    width: 400px;
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+
+            .right{
+                width: 70%;
+                height: 100%;
+                
+                display: flex;
+                
+                align-items: center;
+                flex-direction: column;
+
+                @include mobile{
+                    width: 100%;
+                }
+
+                h1{
+                    font-family: "Inconsolata", monospace;
+                    text-align: center;
+                    @include mobile {
+                        width: 90%;
+                    }
+                }
+
+                p{
+                    width: 80%;
+                    height: 40%;
+                    line-height: 25px;
+                    font-size: 16px;
+                    letter-spacing: 0.7px;
+                    font-family: 'Roboto', sans-serif;
+                    text-align: justify;
+
+                    @include mobile{
+                        width: 90%;
+                        letter-spacing: 0px;
+                        color: rgba(0, 0, 0, 0.719);
+                        
                     }
                 }
             }

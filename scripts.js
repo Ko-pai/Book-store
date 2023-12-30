@@ -63,7 +63,7 @@ async function fetchData() {
           console.log(dataArray);
           console.log(filt);
           localStorage.setItem("new", JSON.stringify(filt));
-          // window.location.href = `./descriptions/bookDescription.html`
+          window.location.href = `./bookDescription.html`
         }
       });
     });
@@ -74,6 +74,8 @@ async function fetchData() {
   favIcon.forEach((icon) => {
     icon.addEventListener("click", (e) => {
       const localD = JSON.parse(localStorage.getItem("favourite"));
+
+      
 
       if (!e.target.classList.contains("heart-active")) {
         if (favIconId.length < data.length) {
@@ -88,21 +90,26 @@ async function fetchData() {
           return value !== e.target.id;
         });
         favIconId = ab;
-        localStorage.setItem("favourite", JSON.stringify(favIconId));
+        localStorage.setItem("favourite",JSON.stringify(favIconId));
       }
+
+
+      
     });
     
     
       let takeLocalData = JSON.parse(localStorage.getItem("favourite"));
       if(!takeLocalData){
         takeLocalData = []
-        localStorage.setItem('favourite' , JSON.stringify(takeLocalData))
+        localStorage.setItem('favourite',JSON.stringify(takeLocalData))
       }else{
+
         takeLocalData.forEach((d) =>{
           if(d == icon.id){
             icon.classList.add('heart-active')
           }
         })
+        
       }
 
     

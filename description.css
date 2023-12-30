@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 body .container {
   width: 100dvw;
@@ -65,6 +69,11 @@ body .container header .last {
   justify-content: center;
   font-family: "Barlow", sans-serif;
 }
+@media (max-width: 560px) {
+  body .container header .last {
+    display: none;
+  }
+}
 body .container header .last ul {
   width: 70%;
   height: 30px;
@@ -81,4 +90,72 @@ body .container header .last ul li a {
 }
 body .container header .last ul li a:active {
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+body .container main {
+  width: 100%;
+  height: calc(100dvh - 100px);
+  display: flex;
+  margin-top: 40px;
+  cursor: default;
+}
+@media (max-width: 560px) {
+  body .container main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .container main .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 560px) {
+  body .container main .left {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  }
+}
+body .container main .left img {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+}
+body .container main .right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 560px) {
+  body .container main .right {
+    width: 100%;
+  }
+}
+body .container main .right h1 {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  body .container main .right h1 {
+    width: 90%;
+  }
+}
+body .container main .right p {
+  width: 80%;
+  height: 40%;
+  line-height: 25px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+@media (max-width: 560px) {
+  body .container main .right p {
+    width: 90%;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 0.719);
+  }
+}/*# sourceMappingURL=description.css.map */

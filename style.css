@@ -76,7 +76,7 @@ body header .left {
 }
 body header .left h2 {
   color: #364958;
-  font-family: "Castoro Titling", serif;
+  font-family: "Inconsolata", monospace;
   font-size: 35px;
   font-weight: 700;
 }
@@ -264,7 +264,7 @@ body main .container .book-card-container .good, body main .container .nice .goo
   border-radius: 10px;
   transition: all 300ms ease;
   position: relative;
-  font-family: "Prata", serif;
+  font-family: "Roboto", sans-serif;
 }
 body main .container .book-card-container .good .fa-heart, body main .container .nice .good .fa-heart {
   position: absolute;
@@ -289,9 +289,10 @@ body main .container .book-card-container .good h3, body main .container .nice .
   text-align: center;
   padding: 0;
   margin: 0;
+  font-weight: 500;
 }
 body main .container .book-card-container .good p, body main .container .nice .good p {
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   color: rgba(54, 73, 88, 0.7333333333);
 }
 body main .container .book-card-container .good button, body main .container .nice .good button {
