@@ -72,10 +72,9 @@ async function fetchData() {
   const favIcon = document.querySelectorAll(".fa-heart");
 
   favIcon.forEach((icon) => {
+    
     icon.addEventListener("click", (e) => {
       const localD = JSON.parse(localStorage.getItem("favourite"));
-
-      
 
       if (!e.target.classList.contains("heart-active")) {
         if (favIconId.length < data.length) {
@@ -104,12 +103,12 @@ async function fetchData() {
         localStorage.setItem('favourite',JSON.stringify(takeLocalData))
       }else{
 
-        takeLocalData.forEach((d) =>{
-          if(d == icon.id){
-            icon.classList.add('heart-active')
-          }
-        })
-        
+          takeLocalData.forEach((d) =>{
+            if(d == icon.id){
+              icon.classList.add('heart-active')
+              
+            }
+          })
       }
 
     
@@ -117,6 +116,7 @@ async function fetchData() {
 }
 
 fetchData();
+
 
 
 

@@ -15,23 +15,82 @@ body .container header {
   height: 100px;
   background-color: #c9e4ca;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+body .container header .afterClickContainer {
+  display: none;
+  transition: transform 500ms ease-in-out;
+  transform: scale(0);
+}
+@media (max-width: 560px) {
+  body .container header .afterClickContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    height: 400px;
+    top: 50px;
+    background: #3b6064;
+    position: absolute;
+    right: 60px;
+    transform: translateX(150%) scale(0);
+    z-index: 2;
+  }
+  body .container header .afterClickContainer ul {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+  body .container header .afterClickContainer ul li {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  body .container header .afterClickContainer ul li:active {
+    color: #c9e4ca;
+  }
 }
 body .container header .left {
   width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+@media (max-width: 560px) {
+  body .container header .left {
+    width: 60%;
+  }
 }
 body .container header .left h2 {
   color: #364958;
   font-family: "Inconsolata", monospace;
   font-size: 35px;
+  font-weight: 700;
+}
+@media (max-width: 560px) {
+  body .container header .left h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 body .container header .left img {
   width: 60px;
   height: 60px;
+}
+@media (max-width: 560px) {
+  body .container header .left img {
+    width: 40px;
+    height: 40px;
+  }
 }
 body .container header .middle {
   width: 40%;
@@ -39,6 +98,11 @@ body .container header .middle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 560px) {
+  body .container header .middle {
+    display: none;
+  }
 }
 body .container header .middle input {
   width: 300px;
@@ -48,6 +112,11 @@ body .container header .middle input {
   border-radius: 5px;
   outline-color: #3b6064;
   outline-width: thin;
+}
+@media (max-width: 560px) {
+  body .container header .middle input {
+    width: 150px;
+  }
 }
 body .container header .middle button {
   width: 50px;
@@ -71,7 +140,28 @@ body .container header .last {
 }
 @media (max-width: 560px) {
   body .container header .last {
-    display: none;
+    width: 30%;
+  }
+}
+body .container header .last .hamburger {
+  display: none;
+}
+@media (max-width: 560px) {
+  body .container header .last .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+  }
+  body .container header .last .hamburger .line {
+    width: 40px;
+    height: 4px;
+    background: black;
+    border-radius: 20px;
+    margin-top: 7px;
+    transition: all 0.5s ease;
   }
 }
 body .container header .last ul {
@@ -82,13 +172,19 @@ body .container header .last ul {
   align-items: center;
   justify-content: space-between;
 }
-body .container header .last ul li a {
+@media (max-width: 560px) {
+  body .container header .last ul {
+    display: none;
+  }
+}
+body .container header .last ul li {
+  cursor: pointer;
   color: #3b6064;
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
 }
-body .container header .last ul li a:active {
+body .container header .last ul li:active {
   color: white;
 }
 body .container main {
@@ -143,9 +239,16 @@ body .container main .right h1 {
     width: 90%;
   }
 }
+body .container main .right h3 {
+  width: 80%;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
 body .container main .right p {
   width: 80%;
-  height: 40%;
+  height: 80%;
   line-height: 25px;
   font-size: 16px;
   letter-spacing: 0.7px;
@@ -158,4 +261,7 @@ body .container main .right p {
     letter-spacing: 0px;
     color: rgba(0, 0, 0, 0.719);
   }
+}
+body .container main .right .author {
+  font-size: 14px;
 }/*# sourceMappingURL=description.css.map */
