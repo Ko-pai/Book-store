@@ -229,6 +229,7 @@ body{
             margin-top: 40px;
             cursor: default;
             @include mobile{
+                height: auto;
                 flex-direction: column;
                 align-items: center;
                 
@@ -250,7 +251,7 @@ body{
                 }
 
                 img{
-                    width: 400px;
+                    width: 300px;
                     height: 500px;
                     border-radius: 5px;
                 }
@@ -267,6 +268,7 @@ body{
 
                 @include mobile{
                     width: 100%;
+                    
                 }
 
                 h1{
